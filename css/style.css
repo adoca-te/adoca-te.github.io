@@ -64,8 +64,8 @@ p { margin: 0 0 1em; }
 .btn-ghost:hover { background: var(--cocoa); color: var(--cream); }
 .btn-small { padding: .55em 1.2em; font-size: .92rem; }
 .btn-block { width: 100%; }
-.btn-wa { background: var(--wa); color: #fff; }
-.btn-wa:hover { background: #1ebe5b; }
+.btn-wa { background: #15803d; color: #fff; }
+.btn-wa:hover { background: #166534; }
 .btn svg { width: 1.3em; height: 1.3em; fill: currentColor; }
 
 /* Header */

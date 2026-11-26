@@ -68,3 +68,7 @@ As estatísticas começam a aparecer poucos minutos depois das primeiras visitas
    - `data-images`: `bolo-novo-1,bolo-novo-2,…`
    - a imagem (`assets/img/bolo-novo-1-sm.webp`), o `alt` (descrever o bolo, ex.: "Bolo de aniversário infantil do…"), o título, a tag e os textos.
 3. Os primeiros 15 bolos aparecem logo; os que têm `data-extra` só aparecem em "Ver mais bolos". Para destacar um bolo novo, coloca-o no topo da lista (e passa o `data-extra` para o 16.º).
+
+## 6. Depois de mudar o CSS ou o JS
+
+No `index.html`, os ficheiros têm um número de versão (`css/style.css?v=…` e `js/main.js?v=…`). Ao alterar algum deles, mudar esse número (ex.: a data de hoje) — senão os telemóveis podem continuar a mostrar a versão antiga durante algum tempo.

@@ -495,3 +495,7 @@ select { -webkit-appearance: none; appearance: none; min-height: 3.1em;
 
 /* Todos os campos com a mesma altura */
 input, select { min-height: 3.1em; }
+
+/* Rede de segurança: nenhum campo (ex.: data no iPhone) pode passar da largura da caixa */
+.order-form .field { overflow: hidden; padding: 4px; margin-left: -4px; margin-right: -4px; }
+.order-form input[type="date"] { width: 100%; min-width: 100%; }

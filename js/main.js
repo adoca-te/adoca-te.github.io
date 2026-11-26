@@ -37,14 +37,19 @@
   let expanded = false;
 
   // Em "Todos" mostra só os primeiros 15 até carregar em "Ver mais"; os filtros mostram tudo.
+  // Em ecrãs de 2 colunas, esconde também o último se o número for ímpar (evita um bolo sozinho na linha).
+  const twoCols = window.matchMedia("(max-width: 900px)");
+  const featured = [...cakes].filter((c) => !c.hasAttribute("data-extra"));
   const applyFilter = () => {
+    const oddTail = twoCols.matches && featured.length % 2 ? featured[featured.length - 1] : null;
     cakes.forEach((cake) => {
       const match = filter === "todos" || cake.dataset.cat.split(" ").includes(filter);
-      const collapsed = filter === "todos" && !expanded && cake.hasAttribute("data-extra");
+      const collapsed = filter === "todos" && !expanded && (cake.hasAttribute("data-extra") || cake === oddTail);
       cake.hidden = !match || collapsed;
     });
     moreBtn.hidden = filter !== "todos" || expanded;
   };
+  twoCols.addEventListener("change", applyFilter);
 
   chips.forEach((chip) =>
     chip.addEventListener("click", () => {

@@ -4,7 +4,7 @@
   --cream-2: #fdf1ec;
   --pink: #e8a0b4;
   --pink-soft: #f6d9df;
-  --pink-deep: #c8607f;
+  --pink-deep: #a8436a;
   --cocoa: #4a2c2a;
   --cocoa-soft: #7a5a55;
   --sponge: #f3e2a6;
@@ -449,4 +449,34 @@ textarea { resize: vertical; }
 
   /* Formulário: campos lado a lado só quando cabem */
   .order-form { padding: 22px 18px; }
+}
+
+/* ===== Telemóvel: toque, contraste e espaçamentos ===== */
+a, button, summary, .chip, .cake-btn { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+html:has(dialog[open]) { overflow: hidden; }            /* página não desliza por trás da janela das fotos */
+.section-pink .eyebrow { color: #9a3a5e; }               /* contraste sobre fundo rosa */
+
+@media (max-width: 560px) {
+  html { scroll-padding-top: 68px; }
+  .header-inner { height: 60px; }
+  .nav ul { top: 60px; }
+  .brand { font-size: 1.25rem; }
+  .brand img { width: 38px; height: 38px; }
+
+  .section { padding: 56px 0; }
+  .section-head { margin-bottom: 1.8rem; }
+
+  .hero { padding: 26px 0 44px; }
+  .hero h1 { font-size: 2.15rem; }
+  .lead { font-size: 1.04rem; }
+  .hero-cta { margin-top: 1.3em; }
+  .hero-cta { gap: 10px; }
+  .hero-cta .btn { flex: 1 1 auto; white-space: nowrap; padding-left: 1.1em; padding-right: 1.1em; }
+  .hero .hand { margin-top: .8em; font-size: 1.45rem; }
+  .hero-art { max-width: 340px; margin-top: 4px; }
+
+  .wa-float { width: 54px; height: 54px; right: 14px; bottom: 14px; }
+
+  .faq summary { padding: 16px 36px 16px 0; font-size: 1.04rem; }
+  .contact-card { padding: 20px 10px; }
 }

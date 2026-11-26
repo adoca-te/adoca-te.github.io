@@ -4,3 +4,6 @@ images/
 # Sistema / editor
 .DS_Store
 .vscode/
+
+# Ficheiros locais
+postal/

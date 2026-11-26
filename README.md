@@ -57,7 +57,9 @@ As estatísticas começam a aparecer poucos minutos depois das primeiras visitas
    ```
    cwebp -q 78 -m 6 -sharp_yuv -metadata none -resize 960 0 images/novo/novo-1.jpeg -o assets/img/bolo-novo-1.webp
    cwebp -q 72 -m 6 -sharp_yuv -metadata none -resize 570 0 images/novo/novo-1.jpeg -o assets/img/bolo-novo-1-sm.webp
+   cwebp -q 72 -m 6 -sharp_yuv -metadata none -resize 480 0 images/novo/novo-1.jpeg -o assets/img/bolo-novo-1-xs.webp
    ```
+   (`-xs` é a miniatura leve para telemóvel; só para fotos em pé. No `<img>` da galeria, copiar também o `srcset` e o `sizes` de outro bolo, trocando os nomes.)
    A versão pequena (`-sm`) só é precisa para a **1.ª foto** (a capa na galeria); as restantes (`-2`, `-3`…) só precisam da versão grande.
    (`-resize 960 0` = 960 px de largura, altura automática; para fotos deitadas usar `1280 0` e `760 0`.)
    Se der "Operation not permitted" (fotos guardadas do WhatsApp), abrir a foto em Pré-visualização → *Exportar* → JPEG e usar essa cópia.

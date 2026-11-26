@@ -1,0 +1,6 @@
+# Fotos originais (não usadas pelo site; contêm fotos pessoais e não publicadas)
+images/
+
+# Sistema / editor
+.DS_Store
+.vscode/

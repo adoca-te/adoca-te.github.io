@@ -41,7 +41,7 @@ As estatísticas começam a aparecer poucos minutos depois das primeiras visitas
 1. **Perfil da Empresa no Google (Google Business Profile)** – https://business.google.com
    É isto que faz aparecer no mapa e no topo das pesquisas "bolos amarante".
    - Categoria: *Pastelaria* / *Loja de bolos*
-   - Como não há loja física: escolher "presto serviços ao cliente" e definir as áreas **Amarante** e **Vila Real** (esconde a morada)
+   - Como não há loja física: escolher "presto serviços ao cliente" e definir a área **Amarante** (esconde a morada)
    - Colocar o link do site, telefone, fotos dos bolos
    - Pedir a clientes satisfeitos que deixem avaliações — é o fator que mais pesa
 2. **Google Search Console** – https://search.google.com/search-console
